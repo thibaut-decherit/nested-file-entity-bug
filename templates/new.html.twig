@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ form_start(form, {
+        'action': path('new')
+    }) }}
+    {{ form_row(form.logo) }}
+    <button type="submit">submit</button>
+    {{ form_end(form) }}
+{% endblock %}
